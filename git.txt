@@ -1,0 +1,86 @@
+Microsoft Windows [Version 10.0.19044.1766]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\test>git init
+Initialized empty Git repository in D:/test/.git/
+
+D:\test>git inti
+git: 'inti' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+D:\test>git init
+Reinitialized existing Git repository in D:/test/.git/
+
+D:\test>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Database Systems_ Design, Implementation, and Management (with  ( PDFDrive.com ).pdf
+        demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\test>git add ./demo.txt
+
+D:\test>git commit -n "Initial Commit"
+error: pathspec 'Initial Commit' did not match any file(s) known to git
+
+D:\test>git commit -n "demo"
+error: pathspec 'demo' did not match any file(s) known to git
+
+D:\test>git commit -m "Initial Command"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'user@WIN-G9V20II5K5O.(none)')
+
+D:\test> git config --global user.email "you@example.com"
+
+D:\test>
+D:\test>git config --global user.email "devansh99777bil@gmail.com"
+
+D:\test> git config --global user.name "Devnik01"
+
+D:\test>git remote add origin https://github.com/Devnik01/LabManagmentSystem.git
+
+D:\test>git branch -M main
+
+D:\test>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Devnik01/LabManagmentSystem.git'
+
+D:\test>git add .
+
+D:\test>git commit -m "Initial Command"
+[main (root-commit) 1441cc8] Initial Command
+ 2 files changed, 1 insertion(+)
+ create mode 100644 DB.pdf
+ create mode 100644 demo.txt
+
+D:\test>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 20.12 MiB | 4.04 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Devnik01/LabManagmentSystem.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\test>
